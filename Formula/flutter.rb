@@ -12,6 +12,11 @@ class Flutter < Formula
     url "https://github.com/flutter/flutter.git", :branch => "dev"
     version "dev"
   end
+  
+  master do
+    url "https://github.com/flutter/flutter.git", :branch => "master"
+    version "dev"
+  end
 
   bottle :unneeded
 
@@ -47,6 +52,9 @@ class Flutter < Formula
 
       Run the following command to install dev channel:
         brew install --devel flutter
+        
+      Run the following command to install master channel:
+        brew install --master flutter
 
       If you want to change channel,please run the following command:
         brew uninstall --force flutter
