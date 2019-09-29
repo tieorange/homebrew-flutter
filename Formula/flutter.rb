@@ -12,6 +12,11 @@ class Flutter < Formula
     url "https://github.com/flutter/flutter.git", :branch => "dev"
     version "dev"
   end
+  
+  master do
+    url "https://github.com/flutter/flutter.git", :branch => "master"
+    version "master"
+  end
 
   bottle :unneeded
 
